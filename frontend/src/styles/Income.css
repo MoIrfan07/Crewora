@@ -1,0 +1,374 @@
+/* ----------------------------------------------
+   PAGE LAYOUT
+---------------------------------------------- */
+.income-page {
+    margin-left: 0vw;
+    margin-top: 4.4vw;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    height: 594px;
+    overflow-y: auto;
+}
+
+.income-content-wrapper {
+    margin-top: 0px;
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------------
+   PAGE HEADER
+---------------------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: -9px;
+    /* margin-bottom: 10px; */
+}
+
+.content-box p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.content-box h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* COMPACT HEADER (NEW) */
+.compact-header {
+    margin-bottom: 40px !important;
+    margin-top: 0px !important;
+}
+
+/* Smaller title */
+.compact-header .page-title {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Smaller header controls */
+.compact-header .header-controls {
+    display: flex;
+    gap: 6px !important;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Smaller text inputs */
+.compact-header .MuiTextField-root .MuiInputBase-input {
+    padding: 4px 6px !important;
+    font-size: 13px !important;
+}
+
+/* Smaller dropdown container */
+.compact-header .MuiInputBase-root {
+    height: 28px !important;
+}
+
+/* Smaller buttons */
+.compact-header button {
+    padding: 0px 10px !important;
+    font-size: 13px !important;
+    min-height: 28px !important;
+    text-transform: none !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Smaller date picker button */
+.compact-header .date-picker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ff7a00;
+    color: #fff;
+    padding: 0px 10px !important;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    height: 28px !important;
+}
+
+/* ----------------------------------------------
+   ADD BUTTON
+---------------------------------------------- */
+.add-btn {
+    background-color: #d62828;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+
+}
+
+/* ----------------------------------------------
+   SEARCH INPUT
+---------------------------------------------- */
+.search-input {
+    padding: 10px 14px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #bfc6d1;
+}
+
+/* ----------------------------------------------
+   MODAL STYLES
+---------------------------------------------- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* ----------------------------------------------
+   MODAL BUTTONS
+---------------------------------------------- */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background: #389d2a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.cancel-btn {
+    background: #ff0015;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+/* ----------------------------------------------
+   ACTION ICONS
+---------------------------------------------- */
+.view-btn,
+.edit-btn,
+.delete-btn {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.action-icon {
+    font-size: 18px;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.action-icon:hover {
+    color: #d62828;
+    transform: scale(1.15);
+}
+
+/* ----------------------------------------------
+   SORT BUTTON (OLD TABLE)
+---------------------------------------------- */
+.amount-sort-header,
+.date-sort-header {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+}
+
+.sort-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.sort-icon {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-top: -3px;
+}
+
+/* Prevent old modal-input CSS from breaking MUI fields */
+.mui-form .modal-input {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.popup-header {
+    padding-bottom: 10px;
+}
+
+/* Position tweaks */
+.css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root {
+    top: 10px;
+}
+
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+    top: 10px !important;
+}
+
+/* DATE PICKER POPUP BOX */
+/* -------------------------
+   DATE PICKER POPUP THEME
+   Matches the screenshot
+---------------------------- */
+
+/* Popover box */
+/* ----------------------------------------------------
+   DATE PICKER POPUP STYLING – EXACT MATCH OF SCREENSHOT
+----------------------------------------------------- */
+.custom-date-popover {
+    background: rgb(255, 255, 255) !important;
+    border-radius: 12px !important;
+    width: 720px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* MODAL GRID */
+.payment-dialog-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px !important;
+}
+
+/* Wider modal */
+.wide-dialog {
+    width: 750px !important;
+}
+
+
+
+
+/* Full row fields */
+.pay-field-full {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.pay-field {
+    width: 100%;
+}
+
+/* Row for save/cancel */
+.pay-row {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.filter-panel{
+    margin-bottom: 20px;
+    display: flex;
+        justify-content: space-between;
+        
+}
+
+/* FILTER PANEL — TextField Label Styling */
+.filter-panel .MuiInputLabel-root {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #6b7280 !important;
+    /* Tailwind gray-500 */
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+/* When label floats (on focus or filled) */
+.filter-panel .MuiInputLabel-shrink {
+    color: #000000 !important;
+    opacity: 0.8;
+}
+
+/* Input text styling */
+.filter-panel .MuiInputBase-input {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+/* Dropdown arrow color */
+.filter-panel .MuiSelect-icon {
+    color: #374151 !important;
+    /* Gray-700 */
+}
+
+/* TextField box outline color */
+.filter-panel .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #d1d5db !important;
+    /* Gray-300 */
+}
+
+.filter-panel .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #9ca3af !important;
+    /* Gray-400 */
+}
+
+.filter-panel .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #2563eb !important;
+    /* Blue-600 */
+}
+
+.payment-dialog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 24px;
+}
+
+.pay-field {
+    width: 100%;
+}
+
+.pay-field-full {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.wide-dialog {
+    width: 100%;
+}

@@ -1,0 +1,455 @@
+/* ---------------- MAIN LAYOUT ---------------- */
+.dashboard-container {
+    margin-left: 0vw;
+    margin-top: 4.3vw;
+    padding: 24px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    min-height: 100vh;
+
+    /* ✅ IMPORTANT */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------- HEADING ---------------- */
+
+.dashboard-heading {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+}
+
+/* ---------------- FILTER BAR ---------------- */
+
+.dashboard-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+}
+
+.filter-select {
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1e293b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.filter-select:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.custom-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-range input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.custom-range span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.filter-reset {
+    background: #a50505;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 14px;
+}
+
+.filter-reset:hover {
+    background: #8e0404;
+    box-shadow: 0 4px 12px rgba(165, 5, 5, 0.3);
+}
+
+.date-input {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.date-input:focus {
+    border-color: #2563eb;
+}
+
+/* ---------------- GRID LAYOUTS ---------------- */
+
+.dashboard-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.dashboard-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.dashboard-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding-block: 40px;
+}
+
+.dashboard-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 20px;
+    padding-block: 40px;
+}
+
+/* ---------------- CARDS ---------------- */
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #64748b;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------- METRIC CARDS ---------------- */
+
+.metric-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.metric-header h3 {
+    margin: 0;
+}
+
+.kpi-value {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    margin: 8px 0;
+    color: #1e293b;
+    line-height: 1.2;
+}
+
+.metric-subtitle {
+    font-size: 13px;
+    color: #64748b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 4px 0 0 0;
+}
+
+/* ---------------- CHART CONTAINERS ---------------- */
+
+.chart-box {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f1f5f9;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chart-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.chart-box h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------- PEOPLE / MINI CARDS ---------------- */
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    position: relative;
+    z-index: 100;
+}
+
+.people-grid h4,
+.people-grid p {
+    color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mini-card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    z-index: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mini-card:hover {
+    transform: translateY(-3px);
+    z-index: 9999;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Panel */
+.hover-panel {
+    display: none;
+    position: absolute;
+    top: 105%;
+    left: -10px;
+    width: calc(100% + 20px);
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    z-index: 99999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mini-card:hover .hover-panel {
+    display: block;
+}
+
+.hover-panel h5 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hover-panel ul {
+    padding-left: 16px;
+    margin: 0;
+    list-style: disc;
+}
+
+.hover-panel ul li {
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #475569;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------- TEXT & UTILITY CLASSES ---------------- */
+
+
+.dashboard-grid-4 p {
+    font-size: 13px;
+    color: #64748b;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.dashboard-grid-6 p {
+    font-size: 13px;
+    color: #06224a;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* ---------------- FILTER CHIPS ---------------- */
+
+.filter-chip {
+    background: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    color: #475569;
+}
+
+.filter-chip:hover {
+    background: #cbd5e1;
+    transform: translateY(-1px);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 1200px) {
+    .dashboard-grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 960px) {
+    .dashboard-container {
+        margin-left: 0;
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .dashboard-heading {
+        font-size: 24px;
+    }
+
+    .dashboard-grid-3,
+    .dashboard-grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 16px;
+    }
+
+
+
+    .dashboard-card {
+        padding: 20px;
+    }
+
+    .kpi-value {
+        font-size: 28px;
+    }
+
+
+}
+
+/* ---------------- ADDITIONAL ALIGNMENTS ---------------- */
+
+/* Ensure all cards have consistent internal spacing */
+.dashboard-card>*:first-child {
+    margin-top: 0;
+}
+
+.dashboard-card>*:last-child {
+    margin-bottom: 0;
+}
+
+/* Chart responsiveness */
+.recharts-responsive-container {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.recharts-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+}
+
+.recharts-legend-wrapper {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* ---------------- CARD HOVER DETAILS ---------------- */
+
+.card-hover-wrapper {
+    position: relative;
+}
+
+.card-hover-details {
+    position: absolute;
+    inset: auto 0 0 0;
+    background: linear-gradient(to top,
+            rgba(15, 23, 42, 0.95),
+            rgba(15, 23, 42, 0.85));
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+    font-size: 13px;
+}
+
+.card-hover-wrapper:hover .card-hover-details {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional small text inside hover */
+.card-hover-details p {
+    margin: 4px 0;
+    font-size: 12px;
+    color: #e5e7eb;
+}

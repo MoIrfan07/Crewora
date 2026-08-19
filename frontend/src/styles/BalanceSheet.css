@@ -1,0 +1,121 @@
+/* -----------------------------------------------------------
+   BALANCE SHEET TABLE — SOA STYLE
+----------------------------------------------------------- */
+
+/* Main table */
+.bs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+/* Table header */
+.bs-table-header {
+    background-color: #1a33d0;
+    font-size: 16px;
+    color: white;
+}
+
+.bs-table th,
+.bs-table td {
+    border: 1px solid #110e0e;
+    padding: 6px 8px;
+}
+
+
+/* -----------------------------------------------------------
+   MAIN SECTION ROWS (collapsed headers)
+   These alternate based on section index (0,1,2,3…)
+----------------------------------------------------------- */
+
+.main-even {
+    background-color: #f8fbff !important;
+    /* soft pale blue */
+}
+
+.main-odd {
+    background-color: #e8f1ff !important;
+    /* slightly deeper pale blue */
+}
+
+/* Expand section header row */
+.bs-section-header {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* -----------------------------------------------------------
+   CHILD ROWS (appear when clicking +)
+   These alternate only within their own section.
+----------------------------------------------------------- */
+
+.child-even {
+    background-color: #ffffff !important;
+    /* white */
+}
+
+.child-odd {
+    background-color: #f2f2f8 !important;
+    /* very light grey/purple */
+}
+
+
+
+
+
+/* -----------------------------------------------------------
+   EXPAND / COLLAPSE BUTTON (+ / −)
+----------------------------------------------------------- */
+
+.exp-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* -----------------------------------------------------------
+   SUMMARY & CLOSING ROWS
+----------------------------------------------------------- */
+
+.summary-row {
+    background-color: #954242 !important;
+    /* SOA maroon */
+    color: white;
+    font-weight: bold;
+}
+
+.closing-row {
+    background-color: #D4B08C !important;
+    /* SOA light brown */
+    font-weight: bold;
+}
+
+
+/* -----------------------------------------------------------
+   PAGE WRAPPER (optional)
+----------------------------------------------------------- */
+
+.balancesheet-page {
+    padding: 30px;
+}
+
+.bs-header {
+    margin-bottom: 15px;
+}
+
+.bs-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.bs-table-container {
+    margin-top: 10px;
+}

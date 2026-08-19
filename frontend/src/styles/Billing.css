@@ -1,0 +1,210 @@
+/* ----------------------------------------------
+   PAGE LAYOUT
+---------------------------------------------- */
+.billing-container {
+    margin-left: 0vw;
+    margin-top: 4.4vw;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    height: 594px;
+    /* FIX: remove scrolling */
+    overflow: hidden;
+    /* Prevent scroll */
+}
+
+/* ----------------------------------------------
+   PAGE HEADER
+---------------------------------------------- */
+.page-header,
+.billing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*  */
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+.billing-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* ----------------------------------------------
+   ADD BUTTON
+---------------------------------------------- */
+.billing-add-btn {
+    background-color: #d62828;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    /*  */
+}
+
+.billing-add-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* ----------------------------------------------
+   TABLE BOX / CONTENT AREA
+---------------------------------------------- */
+.billing-box {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    height: calc(100vh - 200px);
+    /* Ensures content fits visible page */
+    overflow-y: auto;
+    /* Allow table scroll inside box */
+}
+
+.billing-placeholder {
+    color: #475569;
+    font-size: 1rem;
+}
+
+/* ----------------------------------------------
+   BILLING TABLE
+---------------------------------------------- */
+.billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.billing-table th {
+    background: #d0d5db;
+    font-weight: 700;
+    padding: 12px;
+    /*  */
+    border-bottom: 2px solid #bfc6d1;
+    text-align: left;
+    color: #000;
+}
+
+.billing-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+.billing-table tr:hover {
+    background: #f1f5f9;
+}
+
+/* Delete button */
+.billing-delete-btn {
+    background: transparent !important;
+    border: none !important;
+    color: #d62828;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.billing-delete-btn:hover {
+    color: #a00000;
+}
+
+/* ----------------------------------------------
+   MODAL OVERLAY
+---------------------------------------------- */
+.billing-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------------------
+   MODAL BOX
+---------------------------------------------- */
+.billing-modal {
+    width: 420px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------------------------------------------
+   MODAL TITLE
+---------------------------------------------- */
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    /*  */
+}
+
+/* ----------------------------------------------
+   MODAL INPUTS
+---------------------------------------------- */
+.modal-input-group {
+    margin-bottom: 14px;
+}
+
+.modal-input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.modal-input-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+}
+
+/* ----------------------------------------------
+   MODAL BUTTONS
+---------------------------------------------- */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-save-btn {
+    background: #389d2a;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.modal-save-btn:hover {
+    background: #2f8a22;
+}
+
+.modal-cancel-btn {
+    background: #ff0015;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.modal-cancel-btn:hover {
+    background: #d40012;
+}
+
+/* ----------------------------------------------
+   MUI LABEL FIX (SHIFT UP)
+---------------------------------------------- */
+.MuiInputLabel-root {
+    top: 10px !important;
+}

@@ -1,0 +1,49 @@
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.app-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.app-table th {
+    background: #000;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+
+.app-table td {
+    border: 1px solid #444;
+    padding: 4px 6px;
+    font-size: 12px;
+}
+
+/* Alternating row colors */
+.even-row {
+    background: #f5f7fa;
+}
+
+.odd-row {
+    background: #e9eef5;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}

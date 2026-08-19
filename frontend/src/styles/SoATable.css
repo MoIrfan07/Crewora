@@ -1,0 +1,40 @@
+.soa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.soa-table-header{
+    background-color: #1a33d0;
+    font-size: 16px;
+    color: white;
+}
+
+.soa-table th,
+.soa-table td {
+    border: 1px solid #110e0e;
+    padding: 6px 8px;
+}
+
+/* Alternating rows */
+.even-row {
+    background-color: #fff;
+}
+
+.odd-row {
+    background-color: #f7f7f7;
+}
+
+/* Summary row */
+.summary-row {
+    background-color: #8A0D0D;
+    /* deep maroon like screenshot */
+    color: white;
+}
+
+/* Closing balance row */
+.closing-row {
+    background-color: #D4B08C;
+    /* light brownish */
+    font-weight: bold;
+}

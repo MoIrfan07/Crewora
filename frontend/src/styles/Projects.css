@@ -1,0 +1,96 @@
+/* ----------------------------------------------
+   PAGE LAYOUT  
+---------------------------------------------- */
+.projects-page {
+    margin-left: 0vw;
+    margin-top: 4.4vw;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    height: 600x;
+    overflow-y: auto;
+}
+
+
+
+/* ----------------------------------------------
+   PAGE HEADER
+---------------------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+.compact-header {
+    margin-bottom: 40px !important;
+    margin-top: 0px !important;
+}
+
+/* Smaller title */
+.compact-header .page-title {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* TABLE HEADER */
+.MuiDataGrid-columnHeaders {
+    background: #d0d5db !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: #000 !important;
+}
+
+
+
+/* ACTION ICONS */
+.action-icon {
+    font-size: 18px;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.action-icon:hover {
+    color: #d62828;
+    transform: scale(1.15);
+}
+
+
+
+/* MODAL FIXES */
+.popup-header {
+    padding-bottom: 10px;
+}
+
+.css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root {
+    top: 10px;
+}
+
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+    top: 10px !important;
+}
+
+.payment-dialog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 20px;
+}
+
+.wide-dialog {
+    width: 100%;
+}
+
+.pay-field {
+    width: 100%;
+}
+
+.pay-field-full {
+    grid-column: span 2;
+    width: 100%;
+}

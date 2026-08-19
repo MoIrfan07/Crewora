@@ -1,0 +1,11 @@
+node_modules/
+release/
+dist/
+build/
+.env
+*.lognode_modules/
+release/
+dist/
+build/
+.env
+.git-old/

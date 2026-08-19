@@ -1,0 +1,83 @@
+/* ----------------------------------------------
+   PAGE LAYOUT
+---------------------------------------------- */
+.others-page {
+    margin-left: 0vw;
+    margin-top: 4.4vw;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    height: 594px;
+    overflow: hidden;
+    /* No scroll */
+}
+
+.content-box p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.content-box h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------------------------------------
+   HEADER
+---------------------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 800;
+    color: var(--primary);
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+.compact-header {
+    margin-bottom: 40px !important;
+    margin-top: 0px !important;
+}
+
+/* Smaller title */
+.compact-header .page-title {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------------
+   TABLE HEADER
+---------------------------------------------- */
+.MuiDataGrid-columnHeaders {
+    background: #d0d5db !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: #000 !important;
+}
+
+/* ----------------------------------------------
+   MODAL FIX
+---------------------------------------------- */
+.popup-header {
+    padding-bottom: 10px;
+}
+
+.modal-input {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root {
+    top: 10px;
+}
+
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+    top: 10px !important;
+}

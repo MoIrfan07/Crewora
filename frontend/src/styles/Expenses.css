@@ -1,0 +1,51 @@
+.expenses-page {
+    margin-left: 0vw;
+    margin-top: 4.4vw;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef2f5 0%, #dadee3 calc(100% - 15vw));
+    height: 594px;
+    /* FIXED VIEWPORT HEIGHT */
+    overflow: hidden;
+    /* REMOVE SCROLL COMPLETELY */
+}
+
+
+.content-box p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.content-box h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* Popup header */
+.popup-header {
+    padding-bottom: 10px;
+    
+}
+
+/* Table override */
+.MuiDataGrid-columnHeaders {
+    background: #e2e8f0 !important;
+    font-weight: 700 !important;
+}
+
+/* Modal Label Fix */
+.MuiInputLabel-root {
+    top: 10px !important;
+}
